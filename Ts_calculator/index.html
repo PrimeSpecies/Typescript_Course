@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="calculator">
+      <form id="reg">
+        <div class="display">
+          <input type="text" id="display" readonly />
+        </div>
+
+        <div>
+          <input type="button" value="AC" data-action="clear" class="operator" />
+          <input type="button" value="DE" data-action="delete" />
+          <input type="button" value="." data-value="." class="operator" />
+          <input type="button" value="/" data-value="/" class="operator" />
+        </div>
+        <div>
+          <input type="button" value="7" data-value="7" />
+          <input type="button" value="8" data-value="8" />
+          <input type="button" value="9" data-value="9" />
+          <input type="button" value="*" data-value="*" class="operator" />
+        </div>
+        <div>
+          <input type="button" value="4" data-value="4" />
+          <input type="button" value="5" data-value="5" />
+          <input type="button" value="6" data-value="6" />
+          <input type="button" value="-" data-value="-" class="operator" />
+        </div>
+        <div>
+          <input type="button" value="1" data-value="1" />
+          <input type="button" value="2" data-value="2" />
+          <input type="button" value="3" data-value="3" />
+          <input type="button" value="+" data-value="+" class="operator" />
+        </div>
+        <div>
+          <input type="button" value="00" data-value="00" />
+          <input type="button" value="0" data-value="0" />
+          <input type="button" value="=" data-action="calculate" class="equal operator" />
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
