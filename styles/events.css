@@ -1,0 +1,83 @@
+:root {
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+    --bg-page: linear-gradient(180deg, #f8fafc, #eef2f7);
+    --text-primary: #0f172a;
+    --card-bg: rgba(255, 255, 255, 0.9);
+    --pill-bg: rgba(15, 23, 42, 0.06);
+}
+
+body.dark-mode {
+    --bg-page: #111;
+    --text-primary: #f4f4f4;
+    --card-bg: rgba(255, 255, 255, 0.05);
+    --pill-bg: rgba(255, 255, 255, 0.1);
+}
+
+body { background: var(--bg-page); color: var(--text-primary); transition: 0.3s; }
+
+.dashboard-nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 0; margin-bottom: 20px; }
+
+.user-header {
+    display: flex; justify-content: space-between; align-items: center;
+    background: var(--card-bg); border: 1px solid rgba(0,0,0,0.05); border-radius: 22px;
+    padding: 2rem; margin-bottom: 2rem; backdrop-filter: blur(12px);
+}
+
+.events-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+
+.event-card { 
+    background: var(--card-bg); border-radius: 20px; padding: 1.5rem; 
+    border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.admin-panel { background: var(--card-bg); padding: 30px; border-radius: 20px; border: 2px dashed #ffd633; margin-bottom: 40px; }
+.admin-form { display: grid; gap: 15px; max-width: 600px; }
+.admin-form input, .admin-form select, .admin-form textarea { padding: 12px; border-radius: 8px; border: 1px solid #ccc; background: white; color: black; }
+
+.admin-btn { background: #007bff; color: white; border: none; padding: 12px 24px; border-radius: 12px; cursor: pointer; font-weight: bold; }
+.admin-btn:hover { background: #0056b3; }
+
+.pill { background: var(--pill-bg); padding: 6px 15px; border-radius: 999px; font-size: 0.85rem; border: none; color: inherit; cursor: pointer; }
+
+/* VIEW DETAILS LINK - Styled to not look like a link */
+.view-details {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: #2563eb;
+    cursor: pointer;
+    font-weight: 600;
+}
+.view-details:hover { text-decoration: underline; }
+
+/* MODAL STYLES */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 24px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--text-primary);
+}

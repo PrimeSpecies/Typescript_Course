@@ -1,0 +1,11 @@
+{
+    "name": "proj",
+    "version": "1.0.0",
+    "description": "This is a sample description",
+    "scripts": {
+        "proj": "concurrently \"tsc --watch\" \"npx live-server --open=index.html\""
+    },
+    "dependencies": {
+        "concurrently": "^9.2.1"
+    }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Evently | Login</title>
+  <link rel="stylesheet" href="../../styles/login.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Logo -->
+    <div class="logo-header" style="position: absolute; top: 40px; font-family: fantasy; font-size: 40px; color: #ffd633; text-decoration: underline;">Evntly</div>
+
+    <!-- LOGIN PANEL -->
+    <div class="panel active" id="loginPanel">
+      <div class="form-card">
+        <h2>Login</h2>
+        <p>Access your account to register for events.</p>
+
+        <input
+          type="email"
+          id="loginEmail"
+          placeholder="Email"
+          required
+        />
+
+        <button id="loginBtn" class="main-btn">Login</button>
+
+        <button class="toggle-btn" id="toCreate">
+          Don’t have an account? Create one
+        </button>
+      </div>
+    </div>
+
+    <!-- CREATE ACCOUNT PANEL -->
+    <div class="panel" id="createPanel">
+      <div class="form-card">
+        <h2>Create Account</h2>
+        <p>Sign up to join school activities.</p>
+
+        <input
+          type="text"
+          id="fullName"
+          placeholder="Full Name"
+          required
+        />
+
+        <input
+          type="email"
+          id="createEmail"
+          placeholder="Email"
+          required
+        />
+
+        <button id="createBtn" class="main-btn">Register</button>
+
+        <button class="toggle-btn" id="toLogin">
+          Already have an account? Login
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+  <script type="module" src="../../dist/models/login.js"></script>
+</body>
+</html>

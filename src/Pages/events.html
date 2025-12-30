@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evently | Dashboard</title>
+    <link rel="stylesheet" href="/styles/events.css">
+</head>
+<body>
+    <div class="events-page">
+        <header class="dashboard-nav">
+            <div class="logo" style="font-family: fantasy; font-size: 28px; color: #ffd633; text-decoration: underline;">Evntly</div>
+            <button id="themeToggle" class="pill">🌓 Toggle Theme</button>
+        </header>
+
+        <section class="user-header">
+            <div class="user-text">
+                <h1 id="userDisplay">Welcome back, User</h1>
+                <p id="userEventCount">You’re registered for 0 upcoming events</p>
+            </div>
+            <div class="user-meta">
+                <button class="admin-btn" id="adminPanelBtn" style="display: none;">+ Create New Event</button>
+                <span class="pill" id="userStatus">🎫 Status: Active</span>
+            </div>
+        </section>
+
+        <section id="adminPanel" class="admin-panel" style="display: none;">
+            <h2>Create New Event</h2>
+            <div class="admin-form">
+                <input type="text" id="eventTitle" placeholder="Event Title">
+                <input type="date" id="eventDate">
+                <input type="text" id="eventLocation" placeholder="Location">
+                <input type="number" id="eventCapacity" placeholder="Total Seats (e.g. 50)" min="1">
+                <select id="eventCategory">
+                    <option value="Conferences">Conferences</option>
+                    <option value="Workshops">Workshops</option>
+                    <option value="Sports">Sports</option>
+                    <option value="Networking">Networking</option>
+                </select>
+                <textarea id="eventDescription" placeholder="Description"></textarea>
+                <button id="createEventBtn" class="admin-btn">Save Event</button>
+            </div>
+        </section>
+
+        <h2 class="section-title">My Booked Events</h2>
+        <div class="events-list" id="myEvents"></div>
+
+        <div class="section-header">
+            <h2 class="section-title">All Events</h2>
+            <div class="filter-container">
+                <label for="categoryFilter">Filter by:</label>
+                <select id="categoryFilter">
+                    <option value="All">All Categories</option>
+                    <option value="Conferences">Conferences</option>
+                    <option value="Workshops">Workshops</option>
+                    <option value="Sports">Sports</option>
+                    <option value="Networking">Networking</option>
+                </select>
+            </div>
+        </div>
+        <div class="events-list" id="allEvents"></div>
+
+        <footer class="site-footer">
+            <p>Evently - Everything beautifully organized.</p>
+            <button id="logoutBtn" class="toggle-btn">Logout</button>
+        </footer>
+    </div>
+    <div id="eventModal" class="modal-overlay" style="display: none;">
+    <div class="modal-content">
+        <span class="close-modal" id="closeModal">&times;</span>
+        <div id="modalBody">
+            </div>
+    </div>
+</div>
+    <script type="module" src="../../dist/models/app.js"></script>
+</body>
+</html>
