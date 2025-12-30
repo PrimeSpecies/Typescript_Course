@@ -61,22 +61,23 @@
         Re-renders the UI to show "Sold Out" to all other users.
 
 2. Implemented Features  
-    # ==========================================================================
+    
     # PROJECT STATUS: IMPLEMENTED FEATURES
-    # ==========================================================================
-    # FEATURE                     | STATUS  | NOTES
-    # ----------------------------|---------|-----------------------------------
-    # Create Events               | OK      | Admin-only panel functional
-    # Display Full Event List     | OK      | Dynamic grid rendering
-    # Filter Events               | OK      | Category-based filtering
-    # Event Detail Page           | OK      | Modal-based view logic
-    # User Registration           | OK      | Student account creation
-    # Duplicate Protection        | OK      | Prevents double-booking
-    # Capacity Control            | OK      | Real-time seat tracking
-    # Dark Mode / Responsive      | OK      | Variable-based theme toggle
-    # ==========================================================================
+    
+    | FEATURE                     | STATUS  | NOTES
+    | ----------------------------|---------|-------------------------------
+    | Create Events               | OK      | Admin-only panel functional
+    | Display Full Event List     | OK      | Dynamic grid rendering
+    | Filter Events               | OK      | Category-based filtering
+    | Event Detail Page           | OK      | Modal-based view logic
+    | User Registration           | OK      | Student account creation
+    | Duplicate Protection        | OK      | Prevents double-booking
+    | Capacity Control            | OK      | Real-time seat tracking
+    | Dark Mode / Responsive      | OK      | Variable-based theme toggle
+    
 
 3. Project Structure
+   ```
     TS_SEMESTER_PROJECT/
     ├── index.html               # Landing Page
     ├── src/
@@ -104,7 +105,7 @@
     │   └── models.ts            # Type definitions
     ├── .gitignore               # Git rules
     └── tsconfig.json            # TS Compiler settings
-
+    ```
 
 4. Setup & Execution
     1. Prerequisites
@@ -211,10 +212,10 @@
         Waitlist Logic: Adding a feature where students can join a queue for full events, automatically notifying them if a seat becomes available.
 
 8. Author Information
-    # ===================================================================
-    # FIELD                       | FILL IN                             |
-    # ----------------------------|--------------------------------------
-    # Full Name                   | Kenvo Fomazou Samuel                |
-    # Student ID                  | 2425L038                            |
-    # Email                       | samuel.kenvo@saintjeantingenieur.org|
-    # ===================================================================
+   
+    |FIELD                        | FILL IN                             |
+    | ----------------------------|--------------------------------------
+    | Full Name                   | Kenvo Fomazou Samuel                |
+    | Student ID                  | 2425L038                            |
+    | Email                       | samuel.kenvo@saintjeantingenieur.org|
+    
